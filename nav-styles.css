@@ -1,0 +1,38 @@
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav .active {
+    background-color: var(--orange);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: row;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: var(--black);
+}
+
+
+nav ul {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}

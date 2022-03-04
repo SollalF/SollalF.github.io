@@ -1,0 +1,167 @@
+.content-part{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-part .text{
+    width: 40vw;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-inline: 10vw;
+}
+
+main ::marker {
+    color: var(--orange);
+    content: "> ";
+}
+
+.content-part .title{
+    position: relative;
+}
+
+.content-part  .text .title > .bg {
+    background-color: var(--dark-orange);
+    height: 0.3vw;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: skew(-45deg);
+}
+
+.content-part .title h1{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0%;
+    margin: 0%;
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+.content-part > .text p{
+    line-height: 200%;
+}
+
+
+.content-part > .text em{
+    background-color: var(--dark-orange);
+}
+
+#about-me > .picture{
+    background-color: var(--dark-orange);
+    width: 16.25vw;
+    height: 23.5vw;
+    position: relative;
+}
+
+#about-me > .picture img {
+    position: absolute;
+    width: 123%;
+    right: 0;
+    top:-3.5%;
+}
+
+#PolyU > .text {
+    margin-right: 10vw;
+    margin-left: auto;
+}
+
+#PolyU > .picture img{
+    width: 30vw;
+    margin-inline: 5vw;
+    border: solid 20px var(--grey);
+}
+
+#qualifications {
+    padding: 0%;
+    margin: 0%;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(https://cdn.shopify.com/s/files/1/0738/6935/products/Old_house_2018-07-24-0034imp_1024x1024_2x_8e0c2e78-62eb-4fa9-bebc-e3fdeafc7d49.jpg?v=1589279009);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner > div {
+    background-color: var(--black);
+    transform: skew(-45deg);
+    padding-inline: 3%;
+}
+
+.banner > div p{
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    transform: skew(45deg);
+    font-weight: bold;
+    color: var(--orange);
+    white-space: nowrap;
+}
+#more {
+    background-color: var(--light-grey);
+    color: var(--black);
+    padding-block: 5vh;
+    height: fit-content;
+}
+
+#more h1{
+    margin-inline: 20vw;
+    white-space: nowrap;
+}
+
+#more .text {
+    margin-right: 10vw;
+    margin-left: auto;
+    font-weight: bold;    
+}
+
+#more .text p{
+    font-size: 1.5rem;    
+}
+#more li a{
+    color: var(--black);
+}
+
+@media screen and (max-width: 950px) {
+    .content-part{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-part .text{
+        width: 80vw;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    #about-me > .picture{
+        background-color: var(--dark-orange);
+        width: 40vw;
+        height: 58vw;
+        position: relative;
+    }
+
+    #PolyU > .picture img{
+        width: 80vw;
+        border: solid 20px var(--grey);
+    }
+
+    .banner > div p{
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+        transform: skew(45deg);
+        font-weight: bold;
+        color: var(--orange);
+        white-space: nowrap;
+    }
+ }
+ @media screen and (max-width: 1300px) {
+    .content-part .title h1{
+        font-size: 2rem;
+    }
+ }

@@ -1,0 +1,23 @@
+main ul {
+    padding: 0%;
+}
+
+main ::marker {
+    content: "";
+}
+
+main li{
+    list-style: none;
+    background-color: var(--grey);
+    font-size: 2.5rem;
+    border-radius: 10ch;
+    text-align: center;
+    padding: 1vh 3vw;
+    margin-block: 2vh;
+}
+main li a{
+    color: white;    
+}
+main li:hover {
+    background-color: var(--black);
+}
